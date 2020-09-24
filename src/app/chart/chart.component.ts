@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Chart } from 'chart.js';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 
 @Component({
@@ -11,12 +12,14 @@ export class ChartComponent implements OnInit {
 
 
   
-  constructor() { }
+  constructor(@Inject(MAT_DIALOG_DATA)  public properties: any) { }
 
   ngOnInit(): void {
     this.buildChart();
     
   }
+  
+  
   
 
   buildChart(){
