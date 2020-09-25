@@ -10,11 +10,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class ChartComponent implements OnInit {
 
-
+ 
   
-  constructor(@Inject(MAT_DIALOG_DATA)  public properties: any) { }
+  constructor(@Inject(MAT_DIALOG_DATA)  public data: any) { }
 
   ngOnInit(): void {
+    console.log("properties in chart:", this.data);
     this.buildChart();
     
   }
