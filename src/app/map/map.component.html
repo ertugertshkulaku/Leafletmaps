@@ -1,8 +1,12 @@
 <div class="map-container">
     <div class="map-frame">
         <div id="map"></div>
-        
-        <!-- <div class="legend">
+    
+        </div>
+    </div>
+
+
+    <!-- <div class="legend">
                 <ul>
                 <li><div class="bullet" style="background: black;">LEGEND</div></li>
                 <li><div class="bullet" style="background: #008000;">0.9-1</div></li>
@@ -17,7 +21,59 @@
                 <li><div class="bullet" style="background: #8B0000;">0-0.1</div></li>
             </ul> -->
 
-
-            
-        </div>
-    </div>
+            <!-- let under18 = this.data.propertieOfLeayer.Prcnt_U18;
+        let over65 = this.data.propertieOfLeayer.Prcnt_65O; -->
+        <!-- under18 = this.data.propertieOfLeayer.Prcnt_U18.display;
+        over65 = this.data.propertieOfLeayer.Prcnt_65O.display;
+       
+       
+       
+     
+       buildChart(){
+         const myChart = new Chart("myChart", {
+           type: '',
+           data: {
+             labels: ['UNDER_18', 'OVER_65'],
+             datasets: [
+               {
+               data: this.under18,
+               backgroundColor: ['8B0000', '#FF0000'],
+               borderWidth: 3
+             },
+             {
+               data: this.over65,
+               backgroundColor: ['#8B0000', '#FF0000'],
+               borderWidth: 3
+     
+             },
+           ]
+           },
+           options: {
+             legend: {
+               display: false
+             },
+             scales:{
+               xAxes: [{
+                 display: true
+               }],
+               yAxes:[{
+                 display:true
+               }]
+             }
+           }
+         });
+         
+        }
+     
+     }
+      -->
+      <!-- ** listen click of html in ts 
+        // .on('popupopen', (a) => {
+        //   var popUp = a.target.getPopup();
+        //   popUp
+        //     .getElement()
+        //     .querySelector('.chartbutton')
+        //     .addEventListener('click', (e) => {
+        //       this.openChart(propertie);
+        //     });
+        // }); -->
